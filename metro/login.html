@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      background-image: url("metro1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;justify-content: center;align-items: center;margin: 0;
+    }
+    
+    .container {
+     width: 40vw;height: 50vh;
+     /* max-width: 40vw;max-height: 31vh; */
+      margin: 26vh auto;
+      padding: 40px;
+      background-color: #ffffff8f;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333333;
+      font-family: sans-serif;
+      font-size: 3vh;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px 0px 15px 0px;
+      color: #666666;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 14px;
+      border: 1px solid #cccccc;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;text-align: center;
+      border: none;
+      background-color: #4CAF50;
+      color: #ffffff;
+      cursor: pointer;
+      margin-top: 62px;
+      font-size: 3vh;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: white;color: #4CAF50;font-weight: bolder;
+    }
+a[type="new_account"]{
+text-decoration: none;
+}
+#account{
+    text-align: center;margin-top: 52px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form method="post" id="form_main" >
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        
+        <input type="submit" value="Login" onclick="myfun()">
+      </div>
+      <div id="account">
+        <a href="" type="new_account">Create account</a>
+      </div>
+    </form>
+  </div>
+  <script src="Metro.js"></script>
+</body>
+</html>

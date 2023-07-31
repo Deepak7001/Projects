@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      background-image: url("metro1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      text-align: center;
+      padding: 100px;
+      color: white;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      position: relative;top: 24vh;
+    }
+    p {
+      font-size: 24px;position: relative;top: 26vh;
+    }
+    .navbar {
+      background-color: #1b1414bf;
+      overflow: hidden;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      border-radius: 6px;
+      color: black;
+    }
+    .navbar .signup-btn {
+      float: right;
+      margin-right: 20px;
+    }
+    
+    .navbar .signup-btn a {
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    
+    .navbar .signup-btn a:hover {
+      background-color: white;
+      color: #4CAF50;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Ticket</a>
+    <a href="#">Contact</a>
+    <div class="signup-btn">
+      <a href="login.html">Sign Up</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Welcome to Delhi Metro</h1>
+    <p>Journey, explore, and enjoy!!</p>
+  </div>
+  <script src="Metro.js"></script>
+</body>
+</html>

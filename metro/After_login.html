@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Booking</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+   
+body, figure, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dd, dt, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+
+body {
+    background-image: url("metro2.jpg");background-size: cover;background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f1f1f1;
+  display: flex;flex-direction: column;
+}
+
+header {
+  background-color: #1b1414bf;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#user{
+    float: right;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;min-height: 100vh;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000000e0;
+  padding: 20px; border-radius: 10px;
+    margin: 0px 2px 0px 2px;color: #f8f1f1;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #cac5c554;    margin: 0px 10px 0px 10px;border-radius: 8px;
+    padding: 55px 24px 24px 24px;
+}
+
+#origin{
+    padding: 10px;border-radius: 8px;background-color: #000000e0;
+}
+#destination{
+    padding: 10px;border-radius: 8px;background-color: #000000e0;
+}
+#date{
+    padding: 10px;border-radius: 8px;background-color: #000000e0;color:#f8f1f1 ;
+}
+#Search{
+    padding: 10px;border-radius: 8px;background-color: #000000e0;color:#f8f1f1 ;cursor: pointer;
+}
+
+footer {
+ 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li style="float: right;padding-left: 10px;"><a href="Metro.html">Logout</a></li>
+        <span id="user"></span>
+    </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome India No 1 Metro !</h1>
+      <p>Book your train tickets hassle-free.</p>
+      <a href="#" class="button">Get Started</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Train Booking</h2>
+      <ul>
+        <li><a href="#">Book Tickets</a></li>
+        <!-- <li><a href="#">Check Availability</a></li>
+        <li><a href="#">Cancel Tickets</a></li> -->
+      </ul>
+    </aside>
+
+    <section class="main-content">
+      
+      <form>
+        <input type="text" placeholder="Enter origin station" id="origin" required>
+        <input type="text" placeholder="Enter destination station" id="destination" required>
+        <input type="date" placeholder="Select travel date" id="date" required >
+        <button type="submit" id="Search" onclick="search()">Search</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Train Booking. All rights reserved.</p>
+  </footer>
+  <script src="Metro.js"></script>
+</body>
+</html>
